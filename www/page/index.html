@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.min.css">
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../js/javascript.js"></script>
+</head>
+<body>
+
+    <!--header-->
+    <header class="header">
+        <div class="header__container flex-between">
+            <img class="header__img"  src="https://jquery.com/jquery-wp-content/themes/jquery/images/logo-jquery.png" />
+            <div class="header__right">
+                <button class="button-cta header__button">Logout?</button>
+                <p class="header__date"><i class="fa fa-calendar-o header__icon" aria-hidden="true"></i>08-08-2020</p>
+            </div>
+        </div>
+    </header>
+    <!--main-content-->
+    <div class="wrapper flex-justify-center">
+        <!--sidebar-->
+        <sidebar class="sidebar">
+            <div class="sidebar__container">
+                <div class="sidebar__header">
+                    <img class="sidebar__img" src="http://keenthemes.com/preview/metronic/theme/assets/pages/img/avatars/team7.jpg" />
+                    <p class="sidebar__info">Taylor Lorem</p>
+                </div>
+                <ul class="sidebar__list">
+                    <li class="sidebar__item sidebar__item--active">
+                        <a class="sidebar__link">
+                            <i class="fa fa-user sidebar__icon" aria-hidden="true"></i>Add User Account
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link">
+                            <i class="fa fa-pencil-square-o sidebar__icon" aria-hidden="true"></i>Edit Users & Roles
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link">
+                            <i class="fa fa-upload sidebar__icon" aria-hidden="true"></i>Import
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link">
+                            <i class="fa fa-pencil sidebar__icon" aria-hidden="true"></i>View and Edit
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link">
+                            <i class="fa fa-share-square-o sidebar__icon" aria-hidden="true"></i>Export
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link">
+                            <i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i>Delete
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </sidebar>
+        <!--page-content-->
+        <main class="main-content">
+            <!--Add User Account-->
+            <div class="block-page add-user-account">
+                <div class="block-header">
+                    <h2 class="block-header__title">
+                        <i class="fa fa-user block-header__icon" aria-hidden="true"></i>Add User Account
+                    </h2>
+                </div>
+
+                <div class="block-content">
+                    <div class="block-content__container">
+                        <p class="block-content__description bold-text">Enter details below to add a new user:</p>
+                        <div class="block-content__form">
+                            <div class="block-content__row">
+                                <p class="block-content__description">Username</p>
+                                <input class="block-content__input" />
+                            </div>
+                            <div class="block-content__row">
+                                <p class="block-content__description">Password</p>
+                                <input class="block-content__input" />
+                            </div>
+                            <div class="block-content__row">
+                                <p class="block-content__description">Role</p>
+                                <select class="block-content__select">
+                                    <option>Admin</option>
+                                    <option>Manager</option>
+                                    <option>Leader</option>
+                                    <option>Staff</option>
+                                </select>
+                            </div>
+                            <div class="block-content__footer">
+                                <button class="button button-primary">SAVE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Add User Account-->
+
+            <!--Edit Users-->
+            <!--Add User Account-->
+            <div class="block-page edit-user" style="display: none">
+                <div class="block-header">
+                    <h2 class="block-header__title">
+                        <i class="fa fa-user block-header__icon" aria-hidden="true"></i>Edit Users and Roles
+                    </h2>
+                </div>
+
+                <div class="block-content">
+                    <div class="block-content__container">
+                        <p class="block-content__description bold-text">Edit roles and delete user accounts:</p>
+                        <div class="block-content__form">
+                            <div class="block-content__table">
+                                <table>
+                                    <thead>
+                                        <th>User Name</th>
+                                        <th>User Roles</th>
+                                        <th>Action</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Do Thi Ngat</td>
+                                            <td>Admin</td>
+                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nguyen Nguyet Que Chan</td>
+                                            <td>Manager</td>
+                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Taylor Lorem</td>
+                                            <td>Leader</td>
+                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tran Huyen Trang</td>
+                                            <td>Stafff</td>
+                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nguyen Ngoc Thanh Nga</td>
+                                            <td>Admin</td>
+                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pham Nhu Minh</td>
+                                            <td>Manager</td>
+                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chu Bao Ngoc</td>
+                                            <td>Leader</td>
+                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vuong Tu Lam</td>
+                                            <td>Stafff</td>
+                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="block-content__footer">
+                                <button class="button button-primary">SAVE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Edit Users-->
+        </main>
+    </div>
+</body>
+
+</html>

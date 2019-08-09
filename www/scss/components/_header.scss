@@ -1,0 +1,40 @@
+.header {
+    height: 71px;
+    padding: 15px 0;
+    background: $c-primary;
+}
+
+.header__container {
+    padding: 0 15px;
+}
+
+.header__img {
+    max-height: 35px;
+}
+
+.header__right {
+    text-align: right;
+}
+
+.header__date {
+    font-size: 13px;
+    color: rgba($c-white, 0.8);
+}
+
+.header__icon {
+    font-size: 15px !important;
+    margin-right: 5px;
+}
+
+.block-header {
+    padding: 20px 0;
+}
+
+.block-header__title {
+    color: $c-sidebar;
+    font-size: 20px;
+}
+
+.block-header__icon {
+    margin-right: 10px;
+}
