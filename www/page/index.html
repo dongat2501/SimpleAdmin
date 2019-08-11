@@ -31,19 +31,20 @@
                 <div class="sidebar__header">
                     <img class="sidebar__img" src="http://keenthemes.com/preview/metronic/theme/assets/pages/img/avatars/team7.jpg" />
                     <p class="sidebar__info">Taylor Lorem</p>
+                    <p class="sidebar__detail">Manager</p>
                 </div>
                 <ul class="sidebar__list">
-                    <li class="sidebar__item sidebar__item--active">
+                    <li class="sidebar__item sidebar__item--active"  onclick="openContent(event, 'AddUser')">
                         <a class="sidebar__link">
                             <i class="fa fa-user sidebar__icon" aria-hidden="true"></i>Add User Account
                         </a>
                     </li>
-                    <li class="sidebar__item">
+                    <li class="sidebar__item"  onclick="openContent(event, 'EditUser')">
                         <a class="sidebar__link">
                             <i class="fa fa-pencil-square-o sidebar__icon" aria-hidden="true"></i>Edit Users & Roles
                         </a>
                     </li>
-                    <li class="sidebar__item">
+                    <li class="sidebar__item"  onclick="openContent(event, 'Import')">
                         <a class="sidebar__link">
                             <i class="fa fa-upload sidebar__icon" aria-hidden="true"></i>Import
                         </a>
@@ -58,7 +59,7 @@
                             <i class="fa fa-share-square-o sidebar__icon" aria-hidden="true"></i>Export
                         </a>
                     </li>
-                    <li class="sidebar__item">
+                    <li class="sidebar__item"  onclick="openContent(event, 'Delete')">
                         <a class="sidebar__link">
                             <i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i>Delete
                         </a>
@@ -69,7 +70,7 @@
         <!--page-content-->
         <main class="main-content">
             <!--Add User Account-->
-            <div class="block-page add-user-account">
+            <div class="block-page add-user-account block-page--active" id="AddUser">
                 <div class="block-header">
                     <h2 class="block-header__title">
                         <i class="fa fa-user block-header__icon" aria-hidden="true"></i>Add User Account
@@ -107,8 +108,7 @@
             <!--End Add User Account-->
 
             <!--Edit Users-->
-            <!--Add User Account-->
-            <div class="block-page edit-user" style="display: none">
+            <div class="block-page edit-user" id="EditUser">
                 <div class="block-header">
                     <h2 class="block-header__title">
                         <i class="fa fa-user block-header__icon" aria-hidden="true"></i>Edit Users and Roles
@@ -118,7 +118,7 @@
                 <div class="block-content">
                     <div class="block-content__container">
                         <p class="block-content__description bold-text">Edit roles and delete user accounts:</p>
-                        <div class="block-content__form">
+                        <form class="block-content__form">
                             <div class="block-content__table">
                                 <table>
                                     <thead>
@@ -129,42 +129,98 @@
                                     <tbody>
                                         <tr>
                                             <td>Do Thi Ngat</td>
-                                            <td>Admin</td>
+                                            <td>
+                                                <select>
+                                                    <option>Admin</option>
+                                                    <option>Manager</option>
+                                                    <option>Leader</option>
+                                                    <option>Staff</option>
+                                                </select>
+                                            </td>
                                             <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>Nguyen Nguyet Que Chan</td>
-                                            <td>Manager</td>
+                                            <td>
+                                                <select>
+                                                    <option>Admin</option>
+                                                    <option>Manager</option>
+                                                    <option>Leader</option>
+                                                    <option>Staff</option>
+                                                </select>
+                                            </td>
                                             <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>Taylor Lorem</td>
-                                            <td>Leader</td>
+                                            <td>
+                                                <select>
+                                                    <option>Admin</option>
+                                                    <option>Manager</option>
+                                                    <option>Leader</option>
+                                                    <option>Staff</option>
+                                                </select>
+                                            </td>
                                             <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>Tran Huyen Trang</td>
-                                            <td>Stafff</td>
+                                            <td>
+                                                <select>
+                                                    <option>Admin</option>
+                                                    <option>Manager</option>
+                                                    <option>Leader</option>
+                                                    <option>Staff</option>
+                                                </select>
+                                            </td>
                                             <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>Nguyen Ngoc Thanh Nga</td>
-                                            <td>Admin</td>
+                                            <td>
+                                                <select>
+                                                    <option>Admin</option>
+                                                    <option>Manager</option>
+                                                    <option>Leader</option>
+                                                    <option>Staff</option>
+                                                </select>
+                                            </td>
                                             <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>Pham Nhu Minh</td>
-                                            <td>Manager</td>
+                                            <td>
+                                                <select>
+                                                    <option>Admin</option>
+                                                    <option>Manager</option>
+                                                    <option>Leader</option>
+                                                    <option>Staff</option>
+                                                </select>
+                                            </td>
                                             <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>Chu Bao Ngoc</td>
-                                            <td>Leader</td>
+                                            <td>
+                                                <select>
+                                                    <option>Admin</option>
+                                                    <option>Manager</option>
+                                                    <option>Leader</option>
+                                                    <option>Staff</option>
+                                                </select>
+                                            </td>
                                             <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>Vuong Tu Lam</td>
-                                            <td>Stafff</td>
+                                            <td>
+                                                <select>
+                                                    <option>Admin</option>
+                                                    <option>Manager</option>
+                                                    <option>Leader</option>
+                                                    <option>Staff</option>
+                                                </select>
+                                            </td>
                                             <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
                                         </tr>
                                     </tbody>
@@ -174,10 +230,198 @@
                                 <button class="button button-primary">SAVE</button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <!--End Edit Users-->
+
+            <!--Import-->
+            <div class="block-page import-file" id="Import">
+                <div class="block-header">
+                    <h2 class="block-header__title">
+                        <i class="fa fa-user block-header__icon" aria-hidden="true"></i>Import
+                    </h2>
+                </div>
+            
+                <div class="block-content">
+                    <div class="block-content__container">
+                        <p class="block-content__description bold-text">Import Data and Files (images, videos, PDFs):</p>
+                        <form class="block-content__form">
+                            <div class="block-content__row">
+                                <p class="block-content__description">Choose import type: </p>
+                                <div class="block-content__options">
+                                    <label class="container-checkbox">Data
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container-checkbox">Files
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="block-content__row">
+                                <p class="block-content__description">
+                                    Choose file type:
+                                </p>
+                                <div class="block-content__options">
+                                    <label class="container-checkbox">Image
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container-checkbox">Video
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container-checkbox">PDF
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="block-content__row">
+                                <p class="block-content__description">
+                                    Import mode: 
+                                </p>
+                                <div class="block-content__options">
+                                    <label class="container-checkbox">Add
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container-checkbox">Overwrite
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <p class="block-content__warmning warning-text">
+                                        *WARNING: This will irreprabley overwrite data
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block-content__row">
+                                <p class="block-content__description">
+                                    Table mode: 
+                                </p>
+                                <div class="block-content__options">
+                                    <label class="container-checkbox">Single table
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container-checkbox">Multiple Tables
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <p class="block-content__warmning warning-text">
+                                        *Sheet names must match tables names exactly
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block-content__row flex-center-align">
+                                <p class="block-content__description">
+                                    Select table:
+                                </p>
+                                <select class="block-content__select mb-10">
+                                    <option>Table 1</option>
+                                    <option>Table 2</option>
+                                    <option>Table 3</option>
+                                </select>
+                                <input type="file" />
+                            </div>
+                            <div class="block-content__footer">
+                                <button class="button button-primary">IMPORT</button>
+                                <p class="block-content__warmning warning-text">
+                                    Import failed
+                                </p>
+                                <p class="block-content__warmning success-text">
+                                    Import Successfull
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--End Import-->
+            <!--Delete page-->
+            <div class="block-page delete-page" id="Delete">
+                <div class="block-header">
+                    <h2 class="block-header__title">
+                        <i class="fa fa-user block-header__icon" aria-hidden="true"></i>Delete
+                    </h2>
+                    <p class="block-content__note">
+                        *The table will still exist but all data will be deleted
+                    </p>
+                </div>
+            
+                <div class="block-content">
+                    <div class="block-content__container">
+                        <p class="block-content__description bold-text">Delete Data and Files:</p>
+                        <form class="block-content__form">
+                            <div class="block-content__row">
+                                <p class="block-content__description">Select type: </p>
+                                <div class="block-content__options">
+                                    <label class="container-checkbox">Data
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container-checkbox">Files
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="block-content__row">
+                                <p class="block-content__description">
+                                    Choose file type:
+                                </p>
+                                <div class="block-content__options">
+                                    <label class="container-checkbox">Image
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container-checkbox">Video
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container-checkbox">PDF
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="block-content__row flex-center-align">
+                                <p class="block-content__description">
+                                    Select table to delete:
+                                </p>
+                                <select class="block-content__select mb-10">
+                                    <option>Table 1</option>
+                                    <option>Table 2</option>
+                                    <option>Table 3</option>
+                                </select>
+                            </div>
+                            <div class="block-content__row flex-center-align">
+                                <p class="block-content__description">
+                                    Select file to delete:
+                                </p>
+                                <select class="block-content__select mb-10">
+                                    <option>File 1</option>
+                                    <option>File 2</option>
+                                    <option>File 3</option>
+                                </select>
+                            </div>
+                            <div class="block-content__footer">
+                                <button class="button button-primary">DELETE</button>
+                                <p class="block-content__warmning warning-text">
+                                    Delete failed
+                                </p>
+                                <p class="block-content__warmning success-text">
+                                    Delete Successfull
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--End Delete page-->
         </main>
     </div>
 </body>

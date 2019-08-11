@@ -9,7 +9,7 @@
       width: 20%; } }
 
 .sidebar__header {
-  padding: 10px;
+  padding: 10px 10px 25px;
   text-align: center; }
 
 .sidebar__img {
@@ -41,6 +41,9 @@
 .sidebar__info {
   color: #0769ad;
   font-weight: 600; }
+
+.sidebar__detail {
+  color: #5f5050; }
 
 .header {
   height: 71px;
@@ -74,6 +77,11 @@
 .block-header__icon {
   margin-right: 10px; }
 
+.block-page {
+  display: none; }
+  .block-page.block-page--active {
+    display: block; }
+
 .block-content__container {
   width: 100%;
   padding: 15px 0;
@@ -106,6 +114,22 @@
 .block-content__footer {
   padding: 40px 0 0;
   text-align: right; }
+  .import-file .block-content__footer, .delete-page .block-content__footer {
+    text-align: center; }
+
+.block-content__options {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap; }
+  .block-content__options label {
+    min-height: 25px;
+    margin: 0 20px 0 0; }
+  .block-content__options p {
+    width: 100%; }
+
+.block-content__warmning {
+  margin-top: 8px;
+  font-size: 13px; }
 
 .login {
   min-height: 100vh; }
@@ -211,11 +235,11 @@ input, button, select {
   input:focus, button:focus, select:focus {
     outline: none; }
 
-.flex, .flex-align-center, .flex-center, .login__container, .flex-between, .flex-justify-center {
+.flex, .flex-align-center, .flex-center, .login__container, .flex-between, .container-checkbox, .flex-justify-center {
   display: -webkit-box;
   display: flex; }
 
-.flex-align-center, .flex-center, .login__container, .flex-between {
+.flex-align-center, .flex-center, .login__container, .flex-between, .container-checkbox {
   -webkit-box-align: center;
           align-items: center; }
 
@@ -271,6 +295,10 @@ table {
     table td:last-child {
       width: 30px;
       text-align: center; }
+    table td select {
+      height: 35px;
+      padding: 5px 10px;
+      border-radius: 3px; }
   table th {
     padding: 12px;
     background: #0769ad;
@@ -286,3 +314,69 @@ table {
   color: red; }
   .button-delete i {
     margin: 0; }
+
+.container-checkbox {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee; }
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #ccc; }
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+  background-color: #2196F3; }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block; }
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.warning-text {
+  color: red; }
+
+.success-text {
+  color: green; }
+
+.mb-10 {
+  margin-bottom: 10px; }

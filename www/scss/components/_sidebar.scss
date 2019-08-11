@@ -10,7 +10,7 @@
 }
 
 .sidebar__header {
-    padding: 10px;
+    padding: 10px 10px 25px;
     text-align: center;
 }
 
@@ -49,4 +49,8 @@
 .sidebar__info {
     color: $c-primary;
     font-weight: 600;
+}
+
+.sidebar__detail {
+    color: $c-sidebar;
 }
