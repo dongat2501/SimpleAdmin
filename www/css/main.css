@@ -21,7 +21,6 @@
 .sidebar__item {
   padding: 15px 10px;
   font-size: 16px;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
   .sidebar__item.sidebar__item--active {
     background: #fff; }
@@ -118,7 +117,6 @@
     text-align: center; }
 
 .block-content__options {
-  display: -webkit-box;
   display: flex;
   flex-wrap: wrap; }
   .block-content__options label {
@@ -130,6 +128,10 @@
 .block-content__warmning {
   margin-top: 8px;
   font-size: 13px; }
+
+.block-content__announ {
+  margin-top: 8px;
+  font-size: 11px; }
 
 .login {
   min-height: 100vh; }
@@ -183,8 +185,7 @@
   top: 50%;
   left: 0;
   color: #fff;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 22px !important;
   background: #0769ad;
   border: 1px solid #0769ad;
@@ -194,8 +195,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate3d(-50%, -50%, 0);
-            transform: translate3d(-50%, -50%, 0); }
+    transform: translate3d(-50%, -50%, 0); }
   .login__icon.fa-envelope {
     font-size: 20px !important; }
 
@@ -236,20 +236,16 @@ input, button, select {
     outline: none; }
 
 .flex, .flex-align-center, .flex-center, .login__container, .flex-between, .container-checkbox, .flex-justify-center {
-  display: -webkit-box;
   display: flex; }
 
 .flex-align-center, .flex-center, .login__container, .flex-between, .container-checkbox {
-  -webkit-box-align: center;
-          align-items: center; }
+  align-items: center; }
 
 .flex-justify-center, .flex-center, .login__container {
-  -webkit-box-pack: center;
-          justify-content: center; }
+  justify-content: center; }
 
 .flex-between {
-  -webkit-box-pack: justify;
-          justify-content: space-between; }
+  justify-content: space-between; }
 
 .button {
   min-width: 180px;
@@ -278,8 +274,7 @@ input, button, select {
 
 .main-content {
   padding: 0 30px;
-  -webkit-box-flex: 1;
-          flex: 1;
+  flex: 1;
   background: #fff; }
 
 table {
@@ -369,7 +364,6 @@ table {
   height: 10px;
   border: solid white;
   border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
 
 .warning-text {
@@ -380,3 +374,6 @@ table {
 
 .mb-10 {
   margin-bottom: 10px; }
+
+.hidden {
+  display: none; }

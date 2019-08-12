@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <title>Index</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.min.css">
-    <link rel="stylesheet" href="../css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
-    <script src="../../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../js/javascript.js"></script>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/javascript.js"></script>
 </head>
 <body>
 
@@ -251,80 +252,97 @@
                                 <p class="block-content__description">Choose import type: </p>
                                 <div class="block-content__options">
                                     <label class="container-checkbox">Data
-                                        <input type="checkbox" checked="checked">
+                                        <input type="radio" name="typeImport" value="data">
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="container-checkbox">Files
-                                        <input type="checkbox">
+                                        <input type="radio" name="typeImport" value="file">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                             </div>
-                            <div class="block-content__row">
-                                <p class="block-content__description">
-                                    Choose file type:
-                                </p>
-                                <div class="block-content__options">
-                                    <label class="container-checkbox">Image
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container-checkbox">Video
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container-checkbox">PDF
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="block-content__row">
-                                <p class="block-content__description">
-                                    Import mode: 
-                                </p>
-                                <div class="block-content__options">
-                                    <label class="container-checkbox">Add
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container-checkbox">Overwrite
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <p class="block-content__warmning warning-text">
-                                        *WARNING: This will irreprabley overwrite data
+                            <!--file-->
+                            <div class="hidden file-content">
+                                <div class="block-content__row">
+                                    <p class="block-content__description">
+                                        Choose file type:
                                     </p>
+                                    <div class="block-content__options">
+                                        <label class="container-checkbox">Image
+                                            <input type="radio" name="typeFile">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container-checkbox">Video
+                                            <input type="radio" name="typeFile">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container-checkbox">PDF
+                                            <input type="radio" name="typeFile">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="block-content__row">
-                                <p class="block-content__description">
-                                    Table mode: 
-                                </p>
-                                <div class="block-content__options">
-                                    <label class="container-checkbox">Single table
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container-checkbox">Multiple Tables
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <p class="block-content__warmning warning-text">
-                                        *Sheet names must match tables names exactly
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="block-content__row flex-center-align">
-                                <p class="block-content__description">
-                                    Select table:
-                                </p>
-                                <select class="block-content__select mb-10">
-                                    <option>Table 1</option>
-                                    <option>Table 2</option>
-                                    <option>Table 3</option>
-                                </select>
                                 <input type="file" />
+                            </div>
+                            <!--end file-->
+
+                            <!--data-->
+                            <div class=" hidden data-content">
+                                <div class="block-content__row">
+                                    <p class="block-content__description">
+                                        Import mode: 
+                                    </p>
+                                    <div class="block-content__options">
+                                        <label class="container-checkbox">Add
+                                            <input type="radio" name="importMode" value="add">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container-checkbox">Overwrite
+                                            <input type="radio" name="importMode" value="overwrite">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <p class="block-content__warmning warning-text import-warning-text hidden">
+                                            *WARNING: This will irreprabley overwrite data
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="block-content__row">
+                                    <p class="block-content__description">
+                                        Table mode: 
+                                    </p>
+                                    <div class="block-content__options">
+                                        <label class="container-checkbox">Single table
+                                            <input type="radio" name="tableMode" value="single-table">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container-checkbox">Multiple Tables
+                                            <input type="radio" name="tableMode"  value="multi-table">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <p class="block-content__warmning warning-text table-warning-text hidden">
+                                            *Sheet names must match tables names exactly
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="block-content__row flex-center-align select-single-table hidden">
+                                    <p class="block-content__description">
+                                        Select table:
+                                    </p>
+                                    <select class="block-content__select mb-10">
+                                        <option>Table 1</option>
+                                        <option>Table 2</option>
+                                        <option>Table 3</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="table-warning-text hidden">
+                                    <input type="file" />
+                                    <p class="block-content__announ"><i>*File must be in .xlsx format</i></p>
+                                </div>
+                                <div class="select-single-table hidden">
+                                    <input type="file" />
+                                    <p class="block-content__announ"><i>*File must be in CSV or .xlsx format</i></p>
+                                </div>
                             </div>
                             <div class="block-content__footer">
                                 <button class="button button-primary">IMPORT</button>
@@ -360,35 +378,49 @@
                                 <p class="block-content__description">Select type: </p>
                                 <div class="block-content__options">
                                     <label class="container-checkbox">Data
-                                        <input type="checkbox" checked="checked">
+                                        <input type="radio" name="deleteType" value="deteleData">
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="container-checkbox">Files
-                                        <input type="checkbox">
+                                        <input type="radio" name="deleteType" value="deteleFiles">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                             </div>
-                            <div class="block-content__row">
-                                <p class="block-content__description">
-                                    Choose file type:
-                                </p>
-                                <div class="block-content__options">
-                                    <label class="container-checkbox">Image
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container-checkbox">Video
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container-checkbox">PDF
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
+                            <!--Delete File-->
+                            <div class="delete-file hidden">
+                                <div class="block-content__row">
+                                    <p class="block-content__description">
+                                        Choose file type:
+                                    </p>
+                                    <div class="block-content__options">
+                                        <label class="container-checkbox">Image
+                                            <input type="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container-checkbox">Video
+                                            <input type="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container-checkbox">PDF
+                                            <input type="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="block-content__row flex-center-align">
+                                    <p class="block-content__description">
+                                        Select file to delete:
+                                    </p>
+                                    <select class="block-content__select mb-10">
+                                        <option>File 1</option>
+                                        <option>File 2</option>
+                                        <option>File 3</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="block-content__row flex-center-align">
+                            <!--End Delete File-->
+                            <div class="block-content__row flex-center-align delete-data hidden">
                                 <p class="block-content__description">
                                     Select table to delete:
                                 </p>
@@ -398,18 +430,11 @@
                                     <option>Table 3</option>
                                 </select>
                             </div>
-                            <div class="block-content__row flex-center-align">
-                                <p class="block-content__description">
-                                    Select file to delete:
-                                </p>
-                                <select class="block-content__select mb-10">
-                                    <option>File 1</option>
-                                    <option>File 2</option>
-                                    <option>File 3</option>
-                                </select>
-                            </div>
                             <div class="block-content__footer">
                                 <button class="button button-primary">DELETE</button>
+                                <p class="block-content__announ">
+                                    *WARNING: This action cannot be undone
+                                </p>
                                 <p class="block-content__warmning warning-text">
                                     Delete failed
                                 </p>
