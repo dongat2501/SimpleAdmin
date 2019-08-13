@@ -251,7 +251,7 @@ input, button, select {
   min-width: 180px;
   padding: 10px;
   border-radius: 30px;
-  border: 1px solid #0769ad;
+  border: 1px solid transparent;
   text-align: center;
   color: #0769ad;
   font-weight: 600;
@@ -259,7 +259,10 @@ input, button, select {
 
 .button-primary, .button-cta {
   background: #0769ad;
-  color: #fff; }
+  color: #fff;
+  transition: all 0.3s ease-in-out; }
+  .button-primary:hover, .button-cta:hover {
+    background: rgba(7, 105, 173, 0.75); }
 
 .button-cta {
   width: auto;
@@ -306,9 +309,12 @@ table {
   display: inline-block;
   border: 0;
   background: transparent;
-  color: red; }
+  color: red;
+  transition: all 0.3s ease-in-out; }
   .button-delete i {
     margin: 0; }
+  .button-delete:hover {
+    color: rgba(255, 0, 0, 0.75); }
 
 .container-checkbox {
   position: relative;

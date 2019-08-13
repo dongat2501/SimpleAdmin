@@ -62,7 +62,7 @@ input, button, select {
     min-width: 180px;
     padding: 10px;
     border-radius: 30px;
-    border: 1px solid $c-primary;
+    border: 1px solid transparent;
     text-align: center;
     color: $c-primary;
     font-weight: 600;
@@ -73,6 +73,10 @@ input, button, select {
 .button-primary {
     background: $c-primary;
     color: $c-white;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background: rgba($c-primary, 0.75);
+    }
 }
 
 .button-cta {
@@ -134,9 +138,13 @@ table {
     border: 0;
     background: transparent;
     color: red;
+    transition: all 0.3s ease-in-out;
     i {
         margin: 0;
     }
+     &:hover {
+         color: rgba(red, 0.75);
+     }
 }
 
 .container-checkbox {
