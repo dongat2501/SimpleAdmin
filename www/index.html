@@ -15,7 +15,7 @@
 <body>
 
     <!--header-->
-    <header class="header">
+    <!-- <header class="header">
         <div class="header__container flex-between">
             <img class="header__img"  src="https://jquery.com/jquery-wp-content/themes/jquery/images/logo-jquery.png" />
             <div class="header__right">
@@ -23,7 +23,7 @@
                 <p class="header__date"><i class="fa fa-calendar-o header__icon" aria-hidden="true"></i>08-08-2020</p>
             </div>
         </div>
-    </header>
+    </header> -->
     <!--main-content-->
     <div class="wrapper flex-justify-center">
         <!--sidebar-->
@@ -37,17 +37,17 @@
                 <ul class="sidebar__list">
                     <li class="sidebar__item sidebar__item--active"  onclick="openContent(event, 'AddUser')">
                         <a class="sidebar__link">
-                            <i class="fa fa-user sidebar__icon" aria-hidden="true"></i>Add User Account
+                            <i class="fa fa-pencil sidebar__icon" aria-hidden="true"></i>Media Editor
                         </a>
                     </li>
                     <li class="sidebar__item"  onclick="openContent(event, 'EditUser')">
                         <a class="sidebar__link">
-                            <i class="fa fa-pencil-square-o sidebar__icon" aria-hidden="true"></i>Edit Users & Roles
+                            <i class="fa fa-pencil-square-o sidebar__icon" aria-hidden="true"></i>Text Editor
                         </a>
                     </li>
                     <li class="sidebar__item"  onclick="openContent(event, 'Import')">
                         <a class="sidebar__link">
-                            <i class="fa fa-upload sidebar__icon" aria-hidden="true"></i>Import
+                            <i class="fa fa-upload sidebar__icon" aria-hidden="true"></i>YouTube Link
                         </a>
                     </li>
                     <li class="sidebar__item">
@@ -70,165 +70,243 @@
         </sidebar>
         <!--page-content-->
         <main class="main-content">
-            <!--Add User Account-->
+            <!--Media -->
             <div class="block-page add-user-account block-page--active" id="AddUser">
-                <div class="block-header">
-                    <h2 class="block-header__title">
-                        <i class="fa fa-user block-header__icon" aria-hidden="true"></i>Add User Account
-                    </h2>
-                </div>
+                <div class="">
+                    <div class="page-item">
+                        <div class="block-header">
+                            <h2 class="block-header__title">
+                                <i class="fa fa-pencil block-header__icon" aria-hidden="true"></i>Media Editor
+                            </h2>
+                        </div>
 
-                <div class="block-content">
-                    <div class="block-content__container">
-                        <p class="block-content__description bold-text">Enter details below to add a new user:</p>
-                        <div class="block-content__form">
-                            <div class="block-content__row">
-                                <p class="block-content__description">Username</p>
-                                <input class="block-content__input" />
+                        <div class="block-content">
+                            <div class="block-content__container">
+                                <p class="block-content__description bold-text">Select a media or upload a media URL</p>
+                                <div class="block-content__form">
+                                    <div class="block-content__row">
+                                        <div class="grid flex-wrap grid-33">
+                                            <div class="card">
+                                                <img src="https://d31j74p4lpxrfp.cloudfront.net/sites/default/files/styles/mobile_sp_slice_1/public/int_files/1013320-elephant-tanzania.jpg?itok=RA0Br9F6" />
+                                            </div>
+                                            <div class="card">
+                                                <img
+                                                    src="https://d31j74p4lpxrfp.cloudfront.net/sites/default/files/styles/mobile_sp_slice_1/public/int_files/1013320-elephant-tanzania.jpg?itok=RA0Br9F6" />
+                                            </div>
+                                            <div class="card">
+                                                <img
+                                                    src="https://d31j74p4lpxrfp.cloudfront.net/sites/default/files/styles/mobile_sp_slice_1/public/int_files/1013320-elephant-tanzania.jpg?itok=RA0Br9F6" />
+                                            </div>
+                                            <div class="card">
+                                                <img
+                                                    src="https://d31j74p4lpxrfp.cloudfront.net/sites/default/files/styles/mobile_sp_slice_1/public/int_files/1013320-elephant-tanzania.jpg?itok=RA0Br9F6" />
+                                            </div>
+                                            <div class="card">
+                                                <img
+                                                    src="https://d31j74p4lpxrfp.cloudfront.net/sites/default/files/styles/mobile_sp_slice_1/public/int_files/1013320-elephant-tanzania.jpg?itok=RA0Br9F6" />
+                                            </div>
+                                            <div class="card">
+                                                <img
+                                                    src="https://d31j74p4lpxrfp.cloudfront.net/sites/default/files/styles/mobile_sp_slice_1/public/int_files/1013320-elephant-tanzania.jpg?itok=RA0Br9F6" />
+                                            </div>
+                                            <div class="card">
+                                                <img
+                                                    src="https://d31j74p4lpxrfp.cloudfront.net/sites/default/files/styles/mobile_sp_slice_1/public/int_files/1013320-elephant-tanzania.jpg?itok=RA0Br9F6" />
+                                            </div>
+                                            <div class="card card-add-img">
+                                                <label>
+                                                    <input type="file"/>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block-content__row">
+                                        <div class="block-content__input">
+                                            <input class="block-content__input" placeholder="Image Upload URL" />
+                                        </div>
+                                    </div>
+                                    
+                                </div>
                             </div>
-                            <div class="block-content__row">
-                                <p class="block-content__description">Password</p>
-                                <input class="block-content__input" />
+                        </div>
+                    </div>
+                    <div class="page-item">
+                        <div class="block-header">
+                            <h2 class="block-header__title">
+                                <i class="fa fa-pencil block-header__icon" aria-hidden="true"></i>Text Editor
+                            </h2>
+                        </div>
+                    
+                        <div class="block-content">
+                            <div class="block-content__container">
+                                <p class="block-content__description bold-text">Select a font and adjust its properties</p>
+                                <form class="block-content__form">
+                                    <div class="block-content__row">
+                                        <div class="block-content__select">
+                                            <select>
+                                                <option>Select a font</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="block-content__row">
+                                        <div class="block-content__select">
+                                            <select>
+                                                <option>Font size</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="block-content__row">
+                                        <div class="block-content__description">Select color</div>
+                                        <div class="color-area flex-align-center">
+                                            <span class="color-detail"></span>
+                                            <i class="fa fa-pencil sidebar__icon" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
                             </div>
-                            <div class="block-content__row">
-                                <p class="block-content__description">Role</p>
-                                <select class="block-content__select">
-                                    <option>Admin</option>
-                                    <option>Manager</option>
-                                    <option>Leader</option>
-                                    <option>Staff</option>
-                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="page-item">
+                        <div class="block-header">
+                            <h2 class="block-header__title">
+                                <i class="fa fa-pencil block-header__icon" aria-hidden="true"></i>Youtube Editor
+                            </h2>
+                        </div>
+                    
+                        <div class="block-content">
+                            <div class="block-content__container">
+                                <p class="block-content__description bold-text">Input a valid YouTube url</p>
+                                <form class="block-content__form">
+                                    <div class="block-content__row">
+                                        <div class="block-content__input">
+                                            <input class="block-content__input" placeholder="Youtube URL" />
+                                        </div>
+                                    </div>
+                                    <div class="block-content__row">
+                                        <label class="container-checkbox" style="color: grey">Open video in fullscreen mode
+                                            <input type="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="block-content__footer">
-                                <button class="button button-primary">SAVE</button>
+                        </div>
+                    </div>
+                    <div class="page-item">
+                        <div class="block-header">
+                            <h2 class="block-header__title">
+                                <i class="fa fa-pencil block-header__icon" aria-hidden="true"></i>Shape Editor
+                            </h2>
+                        </div>
+                    
+                        <div class="block-content">
+                            <div class="block-content__container">
+                                <p class="block-content__description bold-text">Edit a shape and its properties</p>
+                                <form class="block-content__form">
+                                    <div class="block-content__row">
+                                        <div class="block-content__select">
+                                            <select>
+                                                <option>Select a shape</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="block-content__row">
+                                        <div class="block-content__description">Select color</div>
+                                        <div class="color-area flex-align-center">
+                                            <span class="color-detail"></span>
+                                            <i class="fa fa-pencil sidebar__icon" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="block-content__row">
+                                        <div class="block-content__description">Adjust Opacity</div>
+                                        <div class="color-area flex-align-center">
+                                            <span class="color-detail" style="background-image: url('https://multimedia.3m.com/mws/media/778065P/transparent-graphic-film.jpg');"></span>
+                                            <input type="range" name="opactity" min="0" max="10" style="margin-right: 15px;">100%
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-item">
+                        <div class="block-header">
+                            <h2 class="block-header__title">
+                                <i class="fa fa-book block-header__icon" aria-hidden="true"></i>Upload Document
+                            </h2>
+                        </div>
+                    
+                        <div class="block-content">
+                            <div class="block-content__container">
+                                <p class="block-content__description bold-text">Edit a shape and its properties</p>
+                                <form class="block-content__form">
+                                    <div class="block-content__row center-text">
+                                        <img class="mb-10" src='./img/upload.png' />
+                                        <div class="block-content__description">
+                                            Drag a document here or <label><strong>browser</strong><input type="file"/></label>
+                                            for a document to upload
+                                            <p class="small-p mb-10">Supported documents formart: PDF </p>
+                                            <div class="block-content__pre-file">file1.pdf</div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="block-content__footer">
+                    <button class="button">CANCEL</button>
+                    <button class="button button-primary">SAVE</button>
+                </div>
             </div>
-            <!--End Add User Account-->
+            <!--End Media-->
 
-            <!--Edit Users-->
+            <!--Text Editor-->
             <div class="block-page edit-user" id="EditUser">
                 <div class="block-header">
                     <h2 class="block-header__title">
-                        <i class="fa fa-user block-header__icon" aria-hidden="true"></i>Edit Users and Roles
+                        <i class="fa fa-pencil block-header__icon" aria-hidden="true"></i>Text Editor
                     </h2>
                 </div>
 
                 <div class="block-content">
                     <div class="block-content__container">
-                        <p class="block-content__description bold-text">Edit roles and delete user accounts:</p>
+                        <p class="block-content__description bold-text">Select a font and adjust its properties</p>
                         <form class="block-content__form">
-                            <div class="block-content__table">
-                                <table>
-                                    <thead>
-                                        <th>User Name</th>
-                                        <th>User Roles</th>
-                                        <th>Action</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Do Thi Ngat</td>
-                                            <td>
-                                                <select>
-                                                    <option>Admin</option>
-                                                    <option>Manager</option>
-                                                    <option>Leader</option>
-                                                    <option>Staff</option>
-                                                </select>
-                                            </td>
-                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nguyen Nguyet Que Chan</td>
-                                            <td>
-                                                <select>
-                                                    <option>Admin</option>
-                                                    <option>Manager</option>
-                                                    <option>Leader</option>
-                                                    <option>Staff</option>
-                                                </select>
-                                            </td>
-                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Taylor Lorem</td>
-                                            <td>
-                                                <select>
-                                                    <option>Admin</option>
-                                                    <option>Manager</option>
-                                                    <option>Leader</option>
-                                                    <option>Staff</option>
-                                                </select>
-                                            </td>
-                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tran Huyen Trang</td>
-                                            <td>
-                                                <select>
-                                                    <option>Admin</option>
-                                                    <option>Manager</option>
-                                                    <option>Leader</option>
-                                                    <option>Staff</option>
-                                                </select>
-                                            </td>
-                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nguyen Ngoc Thanh Nga</td>
-                                            <td>
-                                                <select>
-                                                    <option>Admin</option>
-                                                    <option>Manager</option>
-                                                    <option>Leader</option>
-                                                    <option>Staff</option>
-                                                </select>
-                                            </td>
-                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pham Nhu Minh</td>
-                                            <td>
-                                                <select>
-                                                    <option>Admin</option>
-                                                    <option>Manager</option>
-                                                    <option>Leader</option>
-                                                    <option>Staff</option>
-                                                </select>
-                                            </td>
-                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Chu Bao Ngoc</td>
-                                            <td>
-                                                <select>
-                                                    <option>Admin</option>
-                                                    <option>Manager</option>
-                                                    <option>Leader</option>
-                                                    <option>Staff</option>
-                                                </select>
-                                            </td>
-                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Vuong Tu Lam</td>
-                                            <td>
-                                                <select>
-                                                    <option>Admin</option>
-                                                    <option>Manager</option>
-                                                    <option>Leader</option>
-                                                    <option>Staff</option>
-                                                </select>
-                                            </td>
-                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="block-content__row">
+                                <div class="block-content__select">
+                                    <select>
+                                        <option>Select a font</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="block-content__footer">
-                                <button class="button button-primary">SAVE</button>
+                            <div class="block-content__row">
+                                <div class="block-content__select">
+                                    <select>
+                                        <option>Font size</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="block-content__row">
+                                <div class="block-content__description">Select color</div>
+                                <div class="color-area flex-align-center">
+                                    <span class="color-detail"></span>
+                                    <i class="fa fa-pencil sidebar__icon" aria-hidden="true"></i>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -240,7 +318,7 @@
             <div class="block-page import-file" id="Import">
                 <div class="block-header">
                     <h2 class="block-header__title">
-                        <i class="fa fa-user block-header__icon" aria-hidden="true"></i>Import
+                        <i class="fa fa-pencil block-header__icon" aria-hidden="true"></i>Import
                     </h2>
                 </div>
             
@@ -363,7 +441,7 @@
             <div class="block-page delete-page" id="Delete">
                 <div class="block-header">
                     <h2 class="block-header__title">
-                        <i class="fa fa-user block-header__icon" aria-hidden="true"></i>Delete
+                        <i class="fa fa-pencil block-header__icon" aria-hidden="true"></i>Delete
                     </h2>
                     <p class="block-content__note">
                         *The table will still exist but all data will be deleted
