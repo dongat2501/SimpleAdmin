@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/javascript.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main-content">
+            <!--Media -->
+            <div class="block-page">
+                <div class="">
+                    <div class="page-item">
+                        <div class="block-header">
+                            <h2 class="block-header__title">
+                                <i class="fa fa-pencil block-header__icon" aria-hidden="true"></i>Add to Calendar
+                            </h2>
+                        </div>
+                    
+                        <div class="block-content">
+                            <div class="block-content__container">
+                                <form class="block-content__form">
+                                    <div class="block-content__row">
+                                        <div class="block-content__input">
+                                            <input class="block-content__input" placeholder="Event Name" />
+                                            <i class="fa fa-cog" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="block-content__row">
+                                        <div class="block-content__input">
+                                            <input class="block-content__input" placeholder="Description" />
+                                            <i class="fa fa-cog" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="block-content__row">
+                                        <div class="block-content__input">
+                                            <input class="block-content__input" placeholder="Start Time" />
+                                            <i class="fa fa-cog" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="block-content__row">
+                                        <div class="block-content__input">
+                                            <input class="block-content__input" placeholder="End Time" />
+                                            <i class="fa fa-cog" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="block-content__row">
+                                        <div class="block-content__input">
+                                            <input class="block-content__input" placeholder="Location" />
+                                            <i class="fa fa-cog" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="block-content__row">
+                                        <div class="block-content__input">
+                                            <input class="block-content__input" placeholder="Organizer Name" />
+                                            <i class="fa fa-cog" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="block-content__row">
+                                        <div class="block-content__input">
+                                            <input class="block-content__input" placeholder="Organizer Email" />
+                                            <i class="fa fa-cog" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="page-item">
+                            <div class="block-header">
+                                <h2 class="block-header__title">
+                                    <i class="fa fa-pencil block-header__icon" aria-hidden="true"></i>Add to Home Screen
+                                </h2>
+                            </div>
+                        
+                            <div class="block-content">
+                                <div class="block-content__container">
+                                    <form class="block-content__form">
+                                        <div class="block-content__row">
+                                            <div class="block-content__input">
+                                                <p class="block-content__description">Display time in seconds</p>
+                                                <input class="block-content__input" placeholder="12" />
+                                                <i class="fa fa-cog" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div class="block-content__row">
+                                            <div class="block-content__input">
+                                                <p class="block-content__description">Delay time before showing in seconds</p>
+                                                <input class="block-content__input" placeholder="1" />
+                                                <i class="fa fa-cog" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div class="block-content__row">
+                                            <div class="block-content__row">
+                                                <p class="block-content__description">Theme Color</p>
+                                                <div class="block-content__select">
+                                                    <select>
+                                                        <option>Light</option>
+                                                        <option>Dark</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block-content__row">
+                                            <div class="block-content__input">
+                                                <p class="block-content__description">Maximum display count (Don't show the notice after this many times)</p>
+                                                <input class="block-content__input" placeholder="20" />
+                                                <i class="fa fa-cog" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div class="block-content__row">
+                                            <p class="block-content__description">Debug mode (Always show the Popup)</p>
+                                            <label class="container-checkbox" style="color: grey">True
+                                                <input type="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container-checkbox" style="color: grey">False
+                                                <input type="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="block-content__row">
+                                            <div class="block-content__row">
+                                                <p class="block-content__description">OS choice for debug</p>
+                                                <div class="block-content__select">
+                                                    <select>
+                                                        <option>iOS</option>
+                                                        <option>OS</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="page-item">
+                        <div class="block-header">
+                            <h2 class="block-header__title">
+                                <i class="fa fa-pencil block-header__icon" aria-hidden="true"></i>Nearby Services
+                            </h2>
+                        </div>
+                        
+                        <div class="block-content">
+                            <div class="block-content__container">
+                                <form class="block-content__form">
+                                    <div class="block-content__row">
+                                        <div class="block-content__input">
+                                            <p class="block-content__description">Search Query</p>
+                                            <input class="block-content__input" placeholder="Blue Bottle Coffee" />
+                                            <i class="fa fa-cog" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="block-content__row">
+                                        <div class="block-content__input">
+                                            <p class="block-content__description">Headline</p>
+                                            <input class="block-content__input" placeholder="Find Location Near You" />
+                                            <i class="fa fa-cog" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="page-item">
+                        <div class="block-header">
+                            <h2 class="block-header__title">
+                                <i class="fa fa-pencil block-header__icon" aria-hidden="true"></i>Weather
+                            </h2>
+                        </div>
+                    
+                        <div class="block-content">
+                            <div class="block-content__container">
+                                <form class="block-content__form">
+                                    <div class="block-content__row">
+                                        <div class="block-content__input">
+                                            <p class="block-content__description">Use a Zip Code for weather</p>
+                                            <input class="block-content__input" placeholder="1211" />
+                                            <i class="fa fa-cog" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="block-content__row">
+                                        <div class="block-content__row">
+                                            <p class="block-content__description">Style</p>
+                                            <div class="block-content__select">
+                                                <select>
+                                                    <option>Toggle</option>
+                                                    <option>Dark</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block-content__row">
+                                        <p class="block-content__description">Use the user's current location for weather</p>
+                                        <label class="container-checkbox" style="color: grey">True
+                                            <input type="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container-checkbox" style="color: grey">False
+                                            <input type="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </form>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-content__cta mb-10">
+                    <button class="button button-primary">Facebook Url</button>
+                </div>
+                <div class="block-content__cta mb-10">
+                    <button class="button button-primary">Twitter</button>
+                </div>
+                <div class="block-content__cta mb-10">
+                    <button class="button button-primary">Pinterest Url</button>
+                </div>
+            </div>
+            <!--End Media-->
+        </main>
+    </div>
+</body>
+
+</html>

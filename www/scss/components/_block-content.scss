@@ -28,6 +28,9 @@
 
 .block-content__row {
     margin-bottom: 15px;
+    img {
+        max-width: 100px;
+    }
 }
 
 .block-content__input, .block-content__select {
@@ -75,7 +78,7 @@
 }
 
 .block-content__footer {
-    padding: 40px 0 0;
+    padding: 40px 0;
     text-align: right;
     .import-file &, .delete-page & {
         text-align: center;

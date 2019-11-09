@@ -77,11 +77,6 @@
 .block-header__icon {
   margin-right: 10px; }
 
-.block-page {
-  display: none; }
-  .block-page.block-page--active {
-    display: block; }
-
 .page-item {
   width: 100%;
   padding: 15px;
@@ -93,6 +88,14 @@
 
 .block-content__row {
   margin-bottom: 15px; }
+
+.block-content__input i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: grey;
+}
 
 .block-content__input, .block-content__select {
   width: 100%;
@@ -307,6 +310,8 @@ input, button, select {
   font-weight: 600; }
 
 .main-content {
+  max-width: 600px;
+  margin: 0 auto;
   padding: 0 30px;
   -webkit-box-flex: 1;
           flex: 1;

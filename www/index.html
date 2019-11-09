@@ -7,71 +7,16 @@
     <link
         href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="js/javascript.js"></script>
 </head>
 <body>
-
-    <!--header-->
-    <!-- <header class="header">
-        <div class="header__container flex-between">
-            <img class="header__img"  src="https://jquery.com/jquery-wp-content/themes/jquery/images/logo-jquery.png" />
-            <div class="header__right">
-                <button class="button-cta header__button">Logout?</button>
-                <p class="header__date"><i class="fa fa-calendar-o header__icon" aria-hidden="true"></i>08-08-2020</p>
-            </div>
-        </div>
-    </header> -->
-    <!--main-content-->
-    <div class="wrapper flex-justify-center">
-        <!--sidebar-->
-        <sidebar class="sidebar">
-            <div class="sidebar__container">
-                <div class="sidebar__header">
-                    <img class="sidebar__img" src="http://keenthemes.com/preview/metronic/theme/assets/pages/img/avatars/team7.jpg" />
-                    <p class="sidebar__info">Taylor Lorem</p>
-                    <p class="sidebar__detail">Manager</p>
-                </div>
-                <ul class="sidebar__list">
-                    <li class="sidebar__item sidebar__item--active"  onclick="openContent(event, 'AddUser')">
-                        <a class="sidebar__link">
-                            <i class="fa fa-pencil sidebar__icon" aria-hidden="true"></i>Media Editor
-                        </a>
-                    </li>
-                    <li class="sidebar__item"  onclick="openContent(event, 'EditUser')">
-                        <a class="sidebar__link">
-                            <i class="fa fa-pencil-square-o sidebar__icon" aria-hidden="true"></i>Text Editor
-                        </a>
-                    </li>
-                    <li class="sidebar__item"  onclick="openContent(event, 'Import')">
-                        <a class="sidebar__link">
-                            <i class="fa fa-upload sidebar__icon" aria-hidden="true"></i>YouTube Link
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a class="sidebar__link">
-                            <i class="fa fa-pencil sidebar__icon" aria-hidden="true"></i>View and Edit
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a class="sidebar__link">
-                            <i class="fa fa-share-square-o sidebar__icon" aria-hidden="true"></i>Export
-                        </a>
-                    </li>
-                    <li class="sidebar__item"  onclick="openContent(event, 'Delete')">
-                        <a class="sidebar__link">
-                            <i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i>Delete
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </sidebar>
-        <!--page-content-->
+    <div class="wrapper">
         <main class="main-content">
             <!--Media -->
-            <div class="block-page add-user-account block-page--active" id="AddUser">
+            <div class="block-page">
                 <div class="">
                     <div class="page-item">
                         <div class="block-header">
@@ -249,12 +194,69 @@
                                 <p class="block-content__description bold-text">Edit a shape and its properties</p>
                                 <form class="block-content__form">
                                     <div class="block-content__row center-text">
-                                        <img class="mb-10" src='./img/upload.png' />
+                                        <img class="mb-10" style="width: 120px;" src='./img/upload.png' />
                                         <div class="block-content__description">
                                             Drag a document here or <label><strong>browser</strong><input type="file"/></label>
                                             for a document to upload
                                             <p class="small-p mb-10">Supported documents formart: PDF </p>
                                             <div class="block-content__pre-file">file1.pdf</div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-item">
+                        <div class="block-header">
+                            <h2 class="block-header__title">
+                                <i class="fa fa-pencil block-header__icon" aria-hidden="true"></i>Modal Editor
+                            </h2>
+                        </div>
+                    
+                        <div class="block-content">
+                            <div class="block-content__container">
+                                <p class="block-content__description bold-text">Input your website that you'd like to i-frame to this card below</p>
+                                <p class="small-p">Note: Website URL provided must be i-frame applicable</p>
+
+                                <form class="block-content__form">
+                                    <div class="block-content__row">
+                                        <div class="block-content__input">
+                                            <input class="block-content__input" placeholder="Modal URL" />
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-item">
+                        <div class="block-header">
+                            <h2 class="block-header__title">
+                                <i class="fa fa-pencil block-header__icon" aria-hidden="true"></i>GDPR Editor
+                            </h2>
+                        </div>
+                    
+                        <div class="block-content">
+                            <div class="block-content__container">
+                                <p class="block-content__description bold-text">Check and update the following GDPR information</p>
+                                
+                                <form class="block-content__form">
+                                    <div class="block-content__row">
+                                        <div class="block-content__notice mb-10">
+                                            <p>Hi,</p>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                  when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                                  It has survived not only five centuries, but also the leap into electronic typesetting,
+                                                   remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                        </div>
+                                        <div class="block-content__cta">
+                                                <button class="button button-primary">EDIT GDPR NOTICE</button>
+                                            </div>
+                                    </div>
+                                    <div class="block-content__row">
+                                        <div class="block-content__input">
+                                            <input class="block-content__input" placeholder="Find out more URL" />
                                         </div>
                                     </div>
                                 </form>
@@ -268,263 +270,6 @@
                 </div>
             </div>
             <!--End Media-->
-
-            <!--Text Editor-->
-            <div class="block-page edit-user" id="EditUser">
-                <div class="block-header">
-                    <h2 class="block-header__title">
-                        <i class="fa fa-pencil block-header__icon" aria-hidden="true"></i>Text Editor
-                    </h2>
-                </div>
-
-                <div class="block-content">
-                    <div class="block-content__container">
-                        <p class="block-content__description bold-text">Select a font and adjust its properties</p>
-                        <form class="block-content__form">
-                            <div class="block-content__row">
-                                <div class="block-content__select">
-                                    <select>
-                                        <option>Select a font</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="block-content__row">
-                                <div class="block-content__select">
-                                    <select>
-                                        <option>Font size</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="block-content__row">
-                                <div class="block-content__description">Select color</div>
-                                <div class="color-area flex-align-center">
-                                    <span class="color-detail"></span>
-                                    <i class="fa fa-pencil sidebar__icon" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <!--End Edit Users-->
-
-            <!--Import-->
-            <div class="block-page import-file" id="Import">
-                <div class="block-header">
-                    <h2 class="block-header__title">
-                        <i class="fa fa-pencil block-header__icon" aria-hidden="true"></i>Import
-                    </h2>
-                </div>
-            
-                <div class="block-content">
-                    <div class="block-content__container">
-                        <p class="block-content__description bold-text">Import Data and Files (images, videos, PDFs):</p>
-                        <form class="block-content__form">
-                            <div class="block-content__row">
-                                <p class="block-content__description">Choose import type: </p>
-                                <div class="block-content__options">
-                                    <label class="container-checkbox">Data
-                                        <input type="radio" name="typeImport" value="data">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container-checkbox">Files
-                                        <input type="radio" name="typeImport" value="file">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <!--file-->
-                            <div class="hidden file-content">
-                                <div class="block-content__row">
-                                    <p class="block-content__description">
-                                        Choose file type:
-                                    </p>
-                                    <div class="block-content__options">
-                                        <label class="container-checkbox">Image
-                                            <input type="radio" name="typeFile">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container-checkbox">Video
-                                            <input type="radio" name="typeFile">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container-checkbox">PDF
-                                            <input type="radio" name="typeFile">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <input type="file" />
-                            </div>
-                            <!--end file-->
-
-                            <!--data-->
-                            <div class=" hidden data-content">
-                                <div class="block-content__row">
-                                    <p class="block-content__description">
-                                        Import mode: 
-                                    </p>
-                                    <div class="block-content__options">
-                                        <label class="container-checkbox">Add
-                                            <input type="radio" name="importMode" value="add">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container-checkbox">Overwrite
-                                            <input type="radio" name="importMode" value="overwrite">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <p class="block-content__warmning warning-text import-warning-text hidden">
-                                            *WARNING: This will irreprabley overwrite data
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="block-content__row">
-                                    <p class="block-content__description">
-                                        Table mode: 
-                                    </p>
-                                    <div class="block-content__options">
-                                        <label class="container-checkbox">Single table
-                                            <input type="radio" name="tableMode" value="single-table">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container-checkbox">Multiple Tables
-                                            <input type="radio" name="tableMode"  value="multi-table">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <p class="block-content__warmning warning-text table-warning-text hidden">
-                                            *Sheet names must match tables names exactly
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="block-content__row flex-center-align select-single-table hidden">
-                                    <p class="block-content__description">
-                                        Select table:
-                                    </p>
-                                    <select class="block-content__select mb-10">
-                                        <option>Table 1</option>
-                                        <option>Table 2</option>
-                                        <option>Table 3</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="table-warning-text hidden">
-                                    <input type="file" />
-                                    <p class="block-content__announ"><i>*File must be in .xlsx format</i></p>
-                                </div>
-                                <div class="select-single-table hidden">
-                                    <input type="file" />
-                                    <p class="block-content__announ"><i>*File must be in CSV or .xlsx format</i></p>
-                                </div>
-                            </div>
-                            <div class="block-content__footer">
-                                <button class="button button-primary">IMPORT</button>
-                                <p class="block-content__warmning warning-text">
-                                    Import failed
-                                </p>
-                                <p class="block-content__warmning success-text">
-                                    Import Successfull
-                                </p>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <!--End Import-->
-            <!--Delete page-->
-            <div class="block-page delete-page" id="Delete">
-                <div class="block-header">
-                    <h2 class="block-header__title">
-                        <i class="fa fa-pencil block-header__icon" aria-hidden="true"></i>Delete
-                    </h2>
-                    <p class="block-content__note">
-                        *The table will still exist but all data will be deleted
-                    </p>
-                </div>
-            
-                <div class="block-content">
-                    <div class="block-content__container">
-                        <p class="block-content__description bold-text">Delete Data and Files:</p>
-                        <form class="block-content__form">
-                            <div class="block-content__row">
-                                <p class="block-content__description">Select type: </p>
-                                <div class="block-content__options">
-                                    <label class="container-checkbox">Data
-                                        <input type="radio" name="deleteType" value="deteleData">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container-checkbox">Files
-                                        <input type="radio" name="deleteType" value="deteleFiles">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <!--Delete File-->
-                            <div class="delete-file hidden">
-                                <div class="block-content__row">
-                                    <p class="block-content__description">
-                                        Choose file type:
-                                    </p>
-                                    <div class="block-content__options">
-                                        <label class="container-checkbox">Image
-                                            <input type="radio">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container-checkbox">Video
-                                            <input type="radio">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container-checkbox">PDF
-                                            <input type="radio">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="block-content__row flex-center-align">
-                                    <p class="block-content__description">
-                                        Select file to delete:
-                                    </p>
-                                    <select class="block-content__select mb-10">
-                                        <option>File 1</option>
-                                        <option>File 2</option>
-                                        <option>File 3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!--End Delete File-->
-                            <div class="block-content__row flex-center-align delete-data hidden">
-                                <p class="block-content__description">
-                                    Select table to delete:
-                                </p>
-                                <select class="block-content__select mb-10">
-                                    <option>Table 1</option>
-                                    <option>Table 2</option>
-                                    <option>Table 3</option>
-                                </select>
-                            </div>
-                            <div class="block-content__footer">
-                                <button class="button button-primary">DELETE</button>
-                                <p class="block-content__announ">
-                                    *WARNING: This action cannot be undone
-                                </p>
-                                <p class="block-content__warmning warning-text">
-                                    Delete failed
-                                </p>
-                                <p class="block-content__warmning success-text">
-                                    Delete Successfull
-                                </p>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <!--End Delete page-->
         </main>
     </div>
 </body>
