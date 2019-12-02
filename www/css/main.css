@@ -41,5 +41,14 @@
 .mb-20 {
   margin-bottom: 20px; }
 
-button.btn {
-  width: calc(50% - 3px); }
+.mbt-20 {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+button.btn, input {
+  width: calc(100% - 3px); }
+
+input {
+  padding: 6px 10px;
+  border: 1px solid #e2cd0b;
+  text-align: center; }
