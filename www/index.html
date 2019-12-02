@@ -9,446 +9,112 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="js/javascript.js"></script>
 </head>
 <body>
-
-    <!--header-->
-    <header class="header">
-        <div class="header__container flex-between">
-            <img class="header__img"  src="https://jquery.com/jquery-wp-content/themes/jquery/images/logo-jquery.png" />
-            <div class="header__right">
-                <button class="button-cta header__button">Logout?</button>
-                <p class="header__date"><i class="fa fa-calendar-o header__icon" aria-hidden="true"></i>08-08-2020</p>
+    <div class="container">
+        <h5 class="">Personalised Custom Design</h5>
+        <div class="row">
+            <div class="col-sm-12"><p>Subject 1</p></div>
+            <div class="col-4 col-sm-4 mb-20">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="checkbox1">
+                    <label class="custom-control-label" for="checkbox1">
+                        Option 1
+                    </label>
+                </div>
+            </div>
+            <div class="col-4 col-sm-4 mb-20">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="checkbox2">
+                    <label class="custom-control-label" for="checkbox2">
+                        Option 2
+                    </label>
+                </div>
+            </div>
+            <div class="col-4 col-sm-4 mb-20">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input"  id="checkbox3">
+                    <label class="custom-control-label" for="checkbox3">
+                        Option 3
+                    </label>
+                </div>
             </div>
         </div>
-    </header>
-    <!--main-content-->
-    <div class="wrapper flex-justify-center">
-        <!--sidebar-->
-        <sidebar class="sidebar">
-            <div class="sidebar__container">
-                <div class="sidebar__header">
-                    <img class="sidebar__img" src="http://keenthemes.com/preview/metronic/theme/assets/pages/img/avatars/team7.jpg" />
-                    <p class="sidebar__info">Taylor Lorem</p>
-                    <p class="sidebar__detail">Manager</p>
-                </div>
-                <ul class="sidebar__list">
-                    <li class="sidebar__item sidebar__item--active"  onclick="openContent(event, 'AddUser')">
-                        <a class="sidebar__link">
-                            <i class="fa fa-user sidebar__icon" aria-hidden="true"></i>Add User Account
-                        </a>
-                    </li>
-                    <li class="sidebar__item"  onclick="openContent(event, 'EditUser')">
-                        <a class="sidebar__link">
-                            <i class="fa fa-pencil-square-o sidebar__icon" aria-hidden="true"></i>Edit Users & Roles
-                        </a>
-                    </li>
-                    <li class="sidebar__item"  onclick="openContent(event, 'Import')">
-                        <a class="sidebar__link">
-                            <i class="fa fa-upload sidebar__icon" aria-hidden="true"></i>Import
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a class="sidebar__link">
-                            <i class="fa fa-pencil sidebar__icon" aria-hidden="true"></i>View and Edit
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a class="sidebar__link">
-                            <i class="fa fa-share-square-o sidebar__icon" aria-hidden="true"></i>Export
-                        </a>
-                    </li>
-                    <li class="sidebar__item"  onclick="openContent(event, 'Delete')">
-                        <a class="sidebar__link">
-                            <i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i>Delete
-                        </a>
-                    </li>
-                </ul>
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Subject 2</p>
             </div>
-        </sidebar>
-        <!--page-content-->
-        <main class="main-content">
-            <!--Add User Account-->
-            <div class="block-page add-user-account block-page--active" id="AddUser">
-                <div class="block-header">
-                    <h2 class="block-header__title">
-                        <i class="fa fa-user block-header__icon" aria-hidden="true"></i>Add User Account
-                    </h2>
-                </div>
-
-                <div class="block-content">
-                    <div class="block-content__container">
-                        <p class="block-content__description bold-text">Enter details below to add a new user:</p>
-                        <div class="block-content__form">
-                            <div class="block-content__row">
-                                <p class="block-content__description">Username</p>
-                                <input class="block-content__input" />
-                            </div>
-                            <div class="block-content__row">
-                                <p class="block-content__description">Password</p>
-                                <input class="block-content__input" />
-                            </div>
-                            <div class="block-content__row">
-                                <p class="block-content__description">Role</p>
-                                <select class="block-content__select">
-                                    <option>Admin</option>
-                                    <option>Manager</option>
-                                    <option>Leader</option>
-                                    <option>Staff</option>
-                                </select>
-                            </div>
-                            <div class="block-content__footer">
-                                <button class="button button-primary">SAVE</button>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-4 col-sm-4 mb-20">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input"  id="checkbox4">
+                    <label class="custom-control-label" for="checkbox4">
+                        Option 1
+                    </label>
                 </div>
             </div>
-            <!--End Add User Account-->
-
-            <!--Edit Users-->
-            <div class="block-page edit-user" id="EditUser">
-                <div class="block-header">
-                    <h2 class="block-header__title">
-                        <i class="fa fa-user block-header__icon" aria-hidden="true"></i>Edit Users and Roles
-                    </h2>
-                </div>
-
-                <div class="block-content">
-                    <div class="block-content__container">
-                        <p class="block-content__description bold-text">Edit roles and delete user accounts:</p>
-                        <form class="block-content__form">
-                            <div class="block-content__table">
-                                <table>
-                                    <thead>
-                                        <th>User Name</th>
-                                        <th>User Roles</th>
-                                        <th>Action</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Do Thi Ngat</td>
-                                            <td>
-                                                <select>
-                                                    <option>Admin</option>
-                                                    <option>Manager</option>
-                                                    <option>Leader</option>
-                                                    <option>Staff</option>
-                                                </select>
-                                            </td>
-                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nguyen Nguyet Que Chan</td>
-                                            <td>
-                                                <select>
-                                                    <option>Admin</option>
-                                                    <option>Manager</option>
-                                                    <option>Leader</option>
-                                                    <option>Staff</option>
-                                                </select>
-                                            </td>
-                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Taylor Lorem</td>
-                                            <td>
-                                                <select>
-                                                    <option>Admin</option>
-                                                    <option>Manager</option>
-                                                    <option>Leader</option>
-                                                    <option>Staff</option>
-                                                </select>
-                                            </td>
-                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tran Huyen Trang</td>
-                                            <td>
-                                                <select>
-                                                    <option>Admin</option>
-                                                    <option>Manager</option>
-                                                    <option>Leader</option>
-                                                    <option>Staff</option>
-                                                </select>
-                                            </td>
-                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nguyen Ngoc Thanh Nga</td>
-                                            <td>
-                                                <select>
-                                                    <option>Admin</option>
-                                                    <option>Manager</option>
-                                                    <option>Leader</option>
-                                                    <option>Staff</option>
-                                                </select>
-                                            </td>
-                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pham Nhu Minh</td>
-                                            <td>
-                                                <select>
-                                                    <option>Admin</option>
-                                                    <option>Manager</option>
-                                                    <option>Leader</option>
-                                                    <option>Staff</option>
-                                                </select>
-                                            </td>
-                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Chu Bao Ngoc</td>
-                                            <td>
-                                                <select>
-                                                    <option>Admin</option>
-                                                    <option>Manager</option>
-                                                    <option>Leader</option>
-                                                    <option>Staff</option>
-                                                </select>
-                                            </td>
-                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Vuong Tu Lam</td>
-                                            <td>
-                                                <select>
-                                                    <option>Admin</option>
-                                                    <option>Manager</option>
-                                                    <option>Leader</option>
-                                                    <option>Staff</option>
-                                                </select>
-                                            </td>
-                                            <td><button class="button-delete"><i class="fa fa-trash-o sidebar__icon" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="block-content__footer">
-                                <button class="button button-primary">SAVE</button>
-                            </div>
-                        </div>
-                    </form>
+            <div class="col-4 col-sm-4 mb-20">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input"  id="checkbox5">
+                    <label class="custom-control-label" for="checkbox5">
+                        Option 2
+                    </label>
                 </div>
             </div>
-            <!--End Edit Users-->
-
-            <!--Import-->
-            <div class="block-page import-file" id="Import">
-                <div class="block-header">
-                    <h2 class="block-header__title">
-                        <i class="fa fa-user block-header__icon" aria-hidden="true"></i>Import
-                    </h2>
-                </div>
-            
-                <div class="block-content">
-                    <div class="block-content__container">
-                        <p class="block-content__description bold-text">Import Data and Files (images, videos, PDFs):</p>
-                        <form class="block-content__form">
-                            <div class="block-content__row">
-                                <p class="block-content__description">Choose import type: </p>
-                                <div class="block-content__options">
-                                    <label class="container-checkbox">Data
-                                        <input type="radio" name="typeImport" value="data">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container-checkbox">Files
-                                        <input type="radio" name="typeImport" value="file">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <!--file-->
-                            <div class="hidden file-content">
-                                <div class="block-content__row">
-                                    <p class="block-content__description">
-                                        Choose file type:
-                                    </p>
-                                    <div class="block-content__options">
-                                        <label class="container-checkbox">Image
-                                            <input type="radio" name="typeFile">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container-checkbox">Video
-                                            <input type="radio" name="typeFile">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container-checkbox">PDF
-                                            <input type="radio" name="typeFile">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <input type="file" />
-                            </div>
-                            <!--end file-->
-
-                            <!--data-->
-                            <div class=" hidden data-content">
-                                <div class="block-content__row">
-                                    <p class="block-content__description">
-                                        Import mode: 
-                                    </p>
-                                    <div class="block-content__options">
-                                        <label class="container-checkbox">Add
-                                            <input type="radio" name="importMode" value="add">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container-checkbox">Overwrite
-                                            <input type="radio" name="importMode" value="overwrite">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <p class="block-content__warmning warning-text import-warning-text hidden">
-                                            *WARNING: This will irreprabley overwrite data
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="block-content__row">
-                                    <p class="block-content__description">
-                                        Table mode: 
-                                    </p>
-                                    <div class="block-content__options">
-                                        <label class="container-checkbox">Single table
-                                            <input type="radio" name="tableMode" value="single-table">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container-checkbox">Multiple Tables
-                                            <input type="radio" name="tableMode"  value="multi-table">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <p class="block-content__warmning warning-text table-warning-text hidden">
-                                            *Sheet names must match tables names exactly
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="block-content__row flex-center-align select-single-table hidden">
-                                    <p class="block-content__description">
-                                        Select table:
-                                    </p>
-                                    <select class="block-content__select mb-10">
-                                        <option>Table 1</option>
-                                        <option>Table 2</option>
-                                        <option>Table 3</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="table-warning-text hidden">
-                                    <input type="file" />
-                                    <p class="block-content__announ"><i>*File must be in .xlsx format</i></p>
-                                </div>
-                                <div class="select-single-table hidden">
-                                    <input type="file" />
-                                    <p class="block-content__announ"><i>*File must be in CSV or .xlsx format</i></p>
-                                </div>
-                            </div>
-                            <div class="block-content__footer">
-                                <button class="button button-primary">IMPORT</button>
-                                <p class="block-content__warmning warning-text">
-                                    Import failed
-                                </p>
-                                <p class="block-content__warmning success-text">
-                                    Import Successfull
-                                </p>
-                            </div>
-                        </div>
-                    </form>
+            <div class="col-4 col-sm-4 mb-20">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input"  id="checkbox6">
+                    <label class="custom-control-label" for="checkbox6">
+                        Option 3
+                    </label>
                 </div>
             </div>
-
-            <!--End Import-->
-            <!--Delete page-->
-            <div class="block-page delete-page" id="Delete">
-                <div class="block-header">
-                    <h2 class="block-header__title">
-                        <i class="fa fa-user block-header__icon" aria-hidden="true"></i>Delete
-                    </h2>
-                    <p class="block-content__note">
-                        *The table will still exist but all data will be deleted
-                    </p>
-                </div>
-            
-                <div class="block-content">
-                    <div class="block-content__container">
-                        <p class="block-content__description bold-text">Delete Data and Files:</p>
-                        <form class="block-content__form">
-                            <div class="block-content__row">
-                                <p class="block-content__description">Select type: </p>
-                                <div class="block-content__options">
-                                    <label class="container-checkbox">Data
-                                        <input type="radio" name="deleteType" value="deteleData">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container-checkbox">Files
-                                        <input type="radio" name="deleteType" value="deteleFiles">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <!--Delete File-->
-                            <div class="delete-file hidden">
-                                <div class="block-content__row">
-                                    <p class="block-content__description">
-                                        Choose file type:
-                                    </p>
-                                    <div class="block-content__options">
-                                        <label class="container-checkbox">Image
-                                            <input type="radio">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container-checkbox">Video
-                                            <input type="radio">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container-checkbox">PDF
-                                            <input type="radio">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="block-content__row flex-center-align">
-                                    <p class="block-content__description">
-                                        Select file to delete:
-                                    </p>
-                                    <select class="block-content__select mb-10">
-                                        <option>File 1</option>
-                                        <option>File 2</option>
-                                        <option>File 3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!--End Delete File-->
-                            <div class="block-content__row flex-center-align delete-data hidden">
-                                <p class="block-content__description">
-                                    Select table to delete:
-                                </p>
-                                <select class="block-content__select mb-10">
-                                    <option>Table 1</option>
-                                    <option>Table 2</option>
-                                    <option>Table 3</option>
-                                </select>
-                            </div>
-                            <div class="block-content__footer">
-                                <button class="button button-primary">DELETE</button>
-                                <p class="block-content__announ">
-                                    *WARNING: This action cannot be undone
-                                </p>
-                                <p class="block-content__warmning warning-text">
-                                    Delete failed
-                                </p>
-                                <p class="block-content__warmning success-text">
-                                    Delete Successfull
-                                </p>
-                            </div>
-                        </div>
-                    </form>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Subject 3</p>
+            </div>
+            <div class="col-4 col-sm-4 mb-20">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="checkbox7">
+                    <label class="custom-control-label" for="checkbox7">
+                        Option 1
+                    </label>
                 </div>
             </div>
-            <!--End Delete page-->
-        </main>
+            <div class="col-4 col-sm-4 mb-20">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="checkbox8">
+                    <label class="custom-control-label" for="checkbox8">
+                        Option 2
+                    </label>
+                </div>
+            </div>
+            <div class="col-4 col-sm-4 mb-20">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="checkbox9">
+                    <label class="custom-control-label" for="checkbox9">
+                        Option 3
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-success">Phone number</button>
+                <button type="button" class="btn btn-info">Request App</button>
+            </div>
+        </div>
     </div>
 </body>
-
-</html>
